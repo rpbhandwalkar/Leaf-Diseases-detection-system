@@ -1,0 +1,4 @@
+runtime: python38
+
+- url : /.*
+ script : auto

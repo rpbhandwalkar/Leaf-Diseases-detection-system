@@ -1,0 +1,10 @@
+Flask
+requests
+tensorflow
+keras
+imutils
+numpy
+opencv-python
+matplotlib
+
+
