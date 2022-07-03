@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--Image view in which image will be displayed -->
+
+
+    <ImageView
+        android:id="@+id/ivDisplayImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_image_24" />
+
+    <ImageButton
+        android:id="@+id/imgButton"
+        android:layout_width="177dp"
+        android:layout_height="74dp"
+        android:tooltipText="Capture Image"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDisplayImage"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="154dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgButton"
+        android:text="Gallery"
+        app:layout_constraintTop_toBottomOf="@+id/ivDisplayImage" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="120dp"
+        android:text="OutPut: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F82222"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/txtPrediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="116dp"
+        android:imeOptions="actionSearch"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Results Here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
